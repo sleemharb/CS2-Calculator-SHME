@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/emad/CSlab/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
