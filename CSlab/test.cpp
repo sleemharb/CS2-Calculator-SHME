@@ -25,6 +25,15 @@ cin>>v2;
 double multipliedVal = multiply(v1, v2);
 cout<<"Multiplication Result : "<< multipliedVal<<endl;
 
+double v3;
+double v4;
+cout<<"enter value 1 for division; "<<endl;
+cin>>v1;
+cout<<"enter value 2 for division; "<<endl;
+cin>>v2;
+double divideanswer = divide(v1, v2);
+cout<<"Division Result : "<< divideanswer<<endl;
+
 int val;
 cout<<"value to get factorial: "<<endl;
 cin>>val;
@@ -40,10 +49,14 @@ cout<<"lcm Result of 16 and 4 : "<< lcmVal<<endl;
 srand(time(0));
 int min;
 int max;
+do
+{
 cout<<"enter minimum value for random number: "<<endl;
 cin>>min;
 cout<<"enter maximum value for random number: "<<endl;
 cin>>max;
+}
+while (min>max);
 int RandVal= randomNumber(min, max);
 cout<<"Random Value: "<<RandVal<<endl;
 
@@ -52,7 +65,7 @@ cin.ignore(numeric_limits<streamsize>::max(), '\n');
 string expression;
 cout << "Enter an equation: ";
 getline(cin, expression);
-double result = evaluateExpression(expression);
+double result = equanswer(expression);
 cout << "Result: " << result << endl;
 
 return 0;

@@ -46,7 +46,7 @@ int randomNumber(int min, int max) {
     return rand() % (max-min+1)+min;
 }
 
-double evaluateExpression(string expr) {
+double equanswer(string expr) {
     stack<double> nums;
     stack<char> ops;
 
