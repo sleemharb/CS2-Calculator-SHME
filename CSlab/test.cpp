@@ -47,4 +47,14 @@ cin>>max;
 int RandVal= randomNumber(min, max);
 cout<<"Random Value: "<<RandVal<<endl;
 
+cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+string expression;
+cout << "Enter an equation: ";
+getline(cin, expression);
+double result = evaluateExpression(expression);
+cout << "Result: " << result << endl;
+
+return 0;
+
 }
